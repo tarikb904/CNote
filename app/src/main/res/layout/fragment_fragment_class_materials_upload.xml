@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00B8D4"
+
+    tools:context=".FragmentClassMaterialsUpload">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Spinner
+        android:id="@+id/classMaterialUploadchooseTopicSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="Please choose a topics"
+        android:background="@drawable/button_round"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        >
+
+    </Spinner>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/classMaterialUploaddesCription"
+            android:layout_below="@+id/classMaterialUploadchooseTopicSpinner"
+            android:background="@drawable/button_round"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:hint="Enter Decription"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/classMaterialUploadCourseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_round"
+            android:layout_below="@id/classMaterialUploaddesCription"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:hint="Course Title"
+            />
+
+        <EditText
+            android:id="@+id/classMaterialUploadinputChapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_round"
+            android:layout_toRightOf="@+id/classMaterialUploadCourseTitle"
+            android:layout_below="@id/classMaterialUploaddesCription"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:hint="Chapter Name"
+            />
+
+        <EditText
+            android:id="@+id/classMaterialUploadchooseCourseCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_round"
+            android:layout_below="@id/classMaterialUploaddesCription"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_toRightOf="@+id/classMaterialUploadinputChapter"
+            android:gravity="center"
+            android:hint="Course Code"
+        />
+
+        <Spinner
+            android:id="@+id/classMaterialUploadSelectSemister"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="Please Select Semister"
+            android:layout_below="@id/classMaterialUploadchooseCourseCode"
+            android:background="@drawable/button_round"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            >
+
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/classMaterialUploadSelectYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="Please Select Year"
+            android:layout_below="@id/classMaterialUploadchooseCourseCode"
+            android:background="@drawable/button_round"
+            android:layout_toRightOf="@+id/classMaterialUploadSelectSemister"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            >
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/classMaterialUploadchooseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/create_account_button_round"
+            android:layout_below="@id/classMaterialUploadSelectYear"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:layout_toRightOf="@+id/classMaterialUploadinputChapter"
+            android:gravity="center"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:layout_alignParentRight="true"
+            android:textColor="#00E5FF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

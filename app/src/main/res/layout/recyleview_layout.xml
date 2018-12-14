@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:elevation="5dp"
+    android:layout_margin="5dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:id="@+id/descriptionHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textStyle="bold"
+            android:layout_below="@+id/image"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:text="Description:" />
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textStyle="normal"
+            android:layout_below="@+id/image"
+            android:layout_toRightOf="@+id/descriptionHint"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:text="@string/hello_blank_fragment" />
+        <TextView
+            android:id="@+id/coursecodeHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textStyle="bold"
+            android:layout_below="@+id/description"
+            android:layout_margin="10dp"
+            android:text="Course Code:" />
+        <TextView
+            android:id="@+id/coursecode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textStyle="normal"
+            android:layout_below="@+id/description"
+            android:layout_toRightOf="@+id/coursecodeHint"
+            android:layout_margin="10dp"
+            android:text="@string/hello_blank_fragment" />
+        <TextView
+            android:id="@+id/coursetitleHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textStyle="bold"
+            android:layout_below="@+id/coursecode"
+            android:layout_margin="10dp"
+            android:text="Course Title:" />
+        <TextView
+            android:id="@+id/coursetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textStyle="normal"
+            android:layout_below="@+id/coursecode"
+            android:layout_toRightOf="@+id/coursetitleHint"
+            android:layout_margin="10dp"
+            android:text="@string/hello_blank_fragment" />
+
+        <TextView
+            android:id="@+id/semister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textStyle="bold"
+            android:layout_below="@+id/coursetitle"
+            android:layout_margin="10dp"
+            android:text="@string/hello_blank_fragment" />
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textStyle="bold"
+            android:layout_below="@+id/coursetitle"
+            android:layout_toRightOf="@+id/semister"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/hello_blank_fragment" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

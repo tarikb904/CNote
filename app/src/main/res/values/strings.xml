@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CNote</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Name</string>
+    <string name="nav_header_subtitle">User Name</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="title_activity_home_layout">CNote</string>
+    <string name="action_logout">Logout</string>
+    <string name="nav_profile_photo">User Profile Phot</string>
+    <string name="nav_sub_sub_header">Phone Number</string>
+    <string name="nav_sub_header">Email</string>
+    <string name="nav_header_head">User Name</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

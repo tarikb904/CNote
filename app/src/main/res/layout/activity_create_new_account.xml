@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00B8D4"
+    tools:context=".CreateNewAccount">
+    <ImageView
+        android:id="@+id/logoOfCreateAccount"
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/logo2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/logoOfCreateAccount">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/userragistrationName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_round"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/name"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:hint="Name"
+                />
+            <EditText
+                android:id="@+id/userragistrationUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_round"
+                android:padding="10dp"
+                android:inputType="text"
+                android:layout_below="@+id/userragistrationName"
+                android:drawableLeft="@drawable/username"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="UserName"
+                />
+            <EditText
+                android:id="@+id/userragistrationPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_round"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="10dp"
+                android:layout_below="@+id/userragistrationUserName"
+                android:layout_marginTop="10dp"
+                android:hint="Password"
+                />
+            <EditText
+                android:id="@+id/userragistrationEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_round"
+                android:padding="10dp"
+                android:inputType="textEmailAddress"
+                android:layout_below="@+id/userragistrationPassword"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="10dp"
+                android:hint="Email"
+                />
+            <EditText
+                android:id="@+id/userragistrationPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_round"
+                android:padding="10dp"
+                android:inputType="phone"
+                android:layout_below="@+id/userragistrationEmail"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="10dp"
+                android:hint="Phone Number"
+                />
+            <EditText
+                android:id="@+id/userragistrationUnivarsityName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_round"
+                android:padding="10dp"
+                android:inputType="text"
+                android:layout_below="@+id/userragistrationPhoneNumber"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/university"
+                android:drawablePadding="10dp"
+                android:hint="Universty Name"
+                />
+
+            <TextView
+                android:id="@+id/textviewtoPickImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Image For Profile Picture..."
+                android:layout_below="@+id/userragistrationUnivarsityName"
+                android:layout_marginRight="20dp"
+                android:textSize="15sp"
+                android:textColor="#006064"
+                android:padding="5dp"
+                android:onClick="LoginAgain"
+                android:layout_margin="10dp"
+                />
+
+            <Button
+                android:id="@+id/buttonToRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textviewtoPickImage"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/create_account_button_round"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Register"
+                android:textColor="#00E5FF"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:onClick="RegisterUser"
+                />
+            <TextView
+                android:id="@+id/textviewtologin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="already have an account? Log in"
+                android:layout_toLeftOf="@+id/buttonToRegister"
+                android:layout_below="@+id/textviewtoPickImage"
+                android:layout_alignBaseline="@+id/buttonToRegister"
+                android:layout_marginRight="20dp"
+                android:textSize="15sp"
+                android:textColor="#006064"
+                android:padding="5dp"
+                android:onClick="LoginAgain"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
